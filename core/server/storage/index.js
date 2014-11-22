@@ -4,7 +4,7 @@ var errors  = require('../errors'),
 function getStorage(storageChoice) {
     // TODO: this is where the check for storage apps should go
     // Local file system is the default.  Fow now that is all we support.
-    storageChoice = 'local-file-store';
+    storageChoice = 's3';
 
     if (storage[storageChoice]) {
         return storage[storageChoice];
